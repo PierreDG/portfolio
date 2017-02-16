@@ -8,31 +8,114 @@
 	<meta name="keywords" content="UX design,UI design,project manager,freelance,SEO consulting,front-end developer,web consulting">
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/medias.css">
+	<link rel="stylesheet" type="text/css" href="styles/jquery.fullPage.css">
 	<!--[if lt IE 9]>
   	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 	<link href="https://www.fontify.me/wf/5912eacb785640636fe6ad4ba885135b" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="styles/animate.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /><![endif]-->
 	<title>Pierre de Gourcy - Portfolio - Work</title>
 </head>
 <body>
-	<div class="Container">
-		<div class="Menu">
-			<ul class="Menu_list">
-					<li><a href="index.html" >Home</a></li>
-					<li><a href="work.html" style="font-size:1.925em;color:#FEFEFE;">Work</a></li>
-					<li><a href="about.html">About</a></li>
-			</ul>
-		</div>
-		<div class="Content">
-			<h1>Work.</h1>
-			<div class="Content_container">
-			<p>There is few projects I worked on,<br> as a<span style="color:#CCB885;"> UI/UX Designer</span> or a <span style="color:#CCB885;">Project Manager</span>.</p>
+	<div class="Container" id="fullpage">
+		<div class="Container-first section">
+			<div class="Menu">
+				<ul class="Menu_list">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="work.html" style="font-size:1.7em;color:#FEFEFE;">Work</a></li>
+						<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+			<div class="Content">
+				<h1>Work.</h1>
+				<div class="Content_container">
+				<p>There is few projects I worked on,<br> as a<span style="color:#CCB885;"> UI/UX Designer</span> or a <span style="color:#CCB885;">Project Manager</span>.</p>
+				</div>
+			</div>
+			<div class="Scroll">
+				<h5>scroll</h5>
+				<div class="VLine"></div>
 			</div>
 		</div>
-	</div>
+
+		<div class="section work1">
+			<div class="header_up">
+				<div class="HLine"></div>
+				<h2>Air France</h2>
+				<div class="HLine"></div>
+			</div>
+			<div class="header_down">
+				<h5>mobile app redesign</h5>
+				<p>Following a school project, we were asked to redesign Air France’s mobile app. Major airline company in France, Air France is synonymous of elegance and service mindedness.</p>
+			</div>
+			<img class="image_work" src="images/airfrance.png" alt="Air France">
+			<a href="#"><h6>Watch on Behance</h6></a>
+		</div>
+
+		<div class="section work2">
+			<div class="header_up">
+				<div class="HLine"></div>
+				<h2>Boucheron</h2>
+				<div class="HLine"></div>
+			</div>
+			<div class="header_down">
+				<h5>website redesign</h5>
+				<p>Following a school project, we were asked to redesign Air France’s mobile app. Major airline company in France, Air France is synonymous of elegance and service mindedness.</p>
+			</div>
+			<img class="image_work" src="images/boucheron.png" alt="Boucheron">
+			<a href="#"><h6>Watch on Behance</h6></a>
+		</div>
+
+		<div class="section work3">
+			<div class="header_up">
+				<div class="HLine"></div>
+				<h2>H2o</h2>
+				<div class="HLine"></div>
+			</div>
+			<div class="header_down">
+				<h5>website creation</h5>
+				<p>The aim of this project is to fight for equal access to the vital resource that is clean drinking water in order to raise public awareness of the issues at stake: Fight against global warming. This site has been designed with the aim of presenting the most clearly complex data by making it intelligible and easy to access.The future of our planet requires knowledge of the issues and the facts. It is therefore important to make them accessible to all.</p>
+			</div>
+			<img class="image_work3" src="images/H2O.png" alt="H2O">
+			<a href="#"><h6>Visit the website</h6></a>
+		</div>
+
+		<div class="section work4">
+			<div class="header_up">
+				<div class="HLine"></div>
+				<h2>Memento</h2>
+				<div class="HLine"></div>
+			</div>
+			<div class="header_down">
+				<h5>concept - connected object</h5>
+				<p>Development of an innovative digital creation on universal themes. Memento is about the theme of time: a concept of connected box of memories. Offered to a person whom one cherishes, it will only open on a specific date and reveal all its secrets. Box with Arduino Technology and mobil app.</p>
+			</div>
+			<img class="image_work2" src="images/memento.png" alt="H2O">
+			<a href="#"><h6>Watch on Behance</h6></a>
+		</div>
+
+		<div class="section work5">
+			<div class="header_up">
+				<div class="HLine"></div>
+				<h2>Hermes</h2>
+				<div class="HLine"></div>
+			</div>
+			<div class="header_down">
+				<h5>website redesign</h5>
+				<p>Following a school project, we were asked to redesign Hermes’s website. Famous brand of luxury goods and high fashion, Hermes is specialized in leather, ready-to-wear and perfumery with a handmade expertise.</p>
+			</div>
+			<img class="image_work" src="images/hermes.png" alt="H2O">
+			<a href="#"><h6>Watch on Behance</h6></a>
+		</div>
+</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
 </body>
 </html>
