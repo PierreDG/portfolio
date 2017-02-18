@@ -1,4 +1,8 @@
 # Portfolio - Pierre de Gourcy
 
 This is my personal Portfolio.
-All rights reserved. 
+www.pierredegourcy.me
+All rights reserved.
+
+
+https://gitmoji.carloscuesta.me/

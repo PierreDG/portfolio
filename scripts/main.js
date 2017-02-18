@@ -66,3 +66,33 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 });
+
+var container = document.querySelector('.Container-first'),
+	burger = document.querySelector('.Menu_Burger');
+
+// Burger Menu
+
+function openMenu(){
+	container.style.display = "none";
+	burger.style.display = "block";
+    document.body.classList.add('-menuOpen');
+}
+
+function closeMenu(){
+	burger.style.display = "none";
+	container.style.display = "block";
+}
+
+function height(bloc){
+	var hauteur;
+
+	if( typeof( window.innerWidth ) == 'number' )
+		hauteur = window.innerHeight;
+	else if( document.documentElement && document.documentElement.clientHeight )
+		hauteur = document.documentElement.clientHeight;
+
+	document.body.style.height = hauteur+"px";
+}
+
+window.onload = function(){ height("page") };
+window.onresize = function(){ height("page") };

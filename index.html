@@ -7,7 +7,7 @@
 	<meta name="description" content="Web student based in Paris. UX/UI Designer, Project Manager, SEO analyst and Front-end Developer"/>
 	<meta name="keywords" content="UX design,UI design,project manager,freelance,SEO consulting,front-end developer,web consulting">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/medias.css">
+	<link rel="stylesheet" href="styles/media.css">
 	<!--[if lt IE 9]>
   	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
@@ -20,13 +20,28 @@
 	<title>Pierre de Gourcy - Portfolio</title>
 </head>
 <body>
+	<div class="Menu_Burger">
+		<img id="Menu_Burger_Close" src="images/close.png" alt="Close" onclick="closeMenu();">
+		<ul class="Menu_Burger_List">
+			<li><a href="index.html" style="font-size:1.7em;color:#FEFEFE">Home</a></li>
+			<li><a href="work.html">Work</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</div>
 	<div class="Container-first">
-		<div class="Menu">
-			<ul class="Menu_list">
-					<li><a href="index.html" style="font-size:1.7em;color:#FEFEFE">Home</a></li>
-					<li><a href="work.html">Work</a></li>
-					<li><a href="about.html">About</a></li>
-			</ul>
+		<div class="Top">
+			<div class="Name">
+				<h1>Pierre de Gourcy</h1>
+				<h3>UX Designer</h3>
+			</div>
+			<div class="Menu">
+				<img class="Container_Menu_Burger" src="images/burger.png" alt="Menu" onclick="openMenu();">
+				<ul class="Menu_list">
+						<li><a href="index.html" style="font-size:1.7em;color:#FEFEFE">Home</a></li>
+						<li><a href="work.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="Content">
 			<h1>Hello.</h1>
@@ -48,5 +63,10 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
 </body>
 </html>
