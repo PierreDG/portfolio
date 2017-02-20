@@ -11,14 +11,14 @@
 
 @media screen and (max-width: 1100px) {
   .Name {
-    border:1px solid red;
+    /*border:1px solid red;*/
   }
 
 }
 
 @media screen and (max-width: 900px) {
   .Name {
-    border:1px solid blue;
+    /*border:1px solid blue;*/
   }
 
 }
@@ -67,7 +67,7 @@
 
 @media screen and (max-width: 600px) {
   .Name {
-    border:1px solid green;
+    /*border:1px solid green;*/
   }
   .Content h1{
     font-size: 6.2em;
