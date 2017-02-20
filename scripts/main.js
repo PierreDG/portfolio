@@ -67,20 +67,42 @@ $(document).ready(function() {
     });
 });
 
-var container = document.querySelector('.Container-first'),
+var containerFirst = document.querySelector('.Container-first'),
+    work1 = document.querySelector('.work1'),
+    work2 = document.querySelector('.work2'),
+    work3 = document.querySelector('.work3'),
+    work4 = document.querySelector('.work4'),
+    work5 = document.querySelector('.work5'),
+    containerWork = [ work1, work2, work3, work4, work5 ],
 	burger = document.querySelector('.Menu_Burger');
 
 // Burger Menu
 
 function openMenu(){
-	container.style.display = "none";
+	containerFirst.style.display = "none";
+    if (work1 != null){
+        console.log(containerWork);
+        var nav = document.querySelector('#fp-nav');
+        nav.style.opacity = 0;
+        containerWork.forEach(function(e){
+            e.style.display = "none";
+        });
+    }
 	burger.style.display = "block";
     document.body.classList.add('-menuOpen');
+
 }
 
 function closeMenu(){
 	burger.style.display = "none";
-	container.style.display = "block";
+	containerFirst.style.display = "block";
+    if (containerWork != null){
+        var nav = document.querySelector('#fp-nav');
+        nav.style.opacity = 1;
+        containerWork.forEach(function(e){
+            e.style.display = "block";
+        });
+    }
 }
 
 function height(bloc){
